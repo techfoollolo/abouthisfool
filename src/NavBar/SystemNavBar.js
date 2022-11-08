@@ -195,7 +195,7 @@ export default function SystemNavBar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <List className=''>
         {['form1', 'Submit Records'].map((text, index) => (
           
           NavBarListItem(text,<AstronotAnime />)

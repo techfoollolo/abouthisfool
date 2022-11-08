@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+:root{
+    --mainTheme:#00E3D6;
+    --bodyBgTheme:#565656;
+    --NavBarTheme:#1c1c1c;
+    --NavBarHeight: 125px;
+    --HandyLoLoFont: 'Source Code Pro', monospace;
+    --HandyPurple: #BD00FF;
+    --HandyBlue: #00E3D6;
+    --HandyGreen: #00B412;
+    --HandyCoderGradient: linear-gradient(90deg, #00E3D6, #BD00FF);
+  }
+  /*
+  .gradient-text {
+    background-image: var(--HandyCoderGradient);
+    background-clip: text;
+    color: transparent;
+  }
+  */
+#loloLogo{
+    height: 125px;
+}
+
+html{
+  font-family: var(--HandyLoLoFont);
+    background: var(--bodyBgTheme);
+    color: var(--mainTheme);
+}
+body{
+  font-family: var(--HandyLoLoFont);
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+#bgpng-container{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+#bgimage{
+  width:17.5%;
+  height:auto;
+  opacity: 0.3;
+  margin:70px;
+}
+#bgpng{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+}
+.cardAreaContainer{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.cardArea{
+  margin:50px;
+  width:30%;
+  height:350px;
+  display:flex;
+  overflow: scroll;
+}
+.cardText{
+  margin:50px;
+}
+.navBar{
+  font-family: var(--HandyLoLoFont);
+    position:fixed;
+    background: transparent;
+    width: 100%;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;
+    height: var(--NavBarHeight);
+    color:var(--mainTheme);
+    font-size: 50px;
+    display: flex;
+    background-color: var(--NavBarTheme);
+
+}
+.navBarSpace{
+    display: flex;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: var(--NavBarHeight);
+}
+.HandyCoderBorder{
+  border-image: var(--HandyCoderGradient) 30;
+  border-style:solid;
+  border-width:4px;
+}
+.navBarItem{
+    display: flex;
+    align-items: flex-end;
+    /* background: transparent; */
+    width: 150px;
+    height:95px;
+    font-size: 20px;
+    font-weight:700;
+    font-family: var(--HandyLoLoFont);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: var(--HandyCoderGradient);
+    background-clip: text;
+    color: transparent;
+}
+@media screen and (max-width: 800px) {
+    .navBar{
+        font-size: 20px;
+        color:var(--mainTheme);
+    }
+    .cardArea{
+      margin:50px;
+      width:30%;
+      height:350px;
+      display:flex;
+      overflow: scroll;
+    }
+
+}
+
+button{
+    color: var(--mainTheme);
+    background: transparent;
+    
+}

@@ -1,31 +1,57 @@
-import './Academy.css';
-import SystemNavBar from './NavBar/SystemNavBar';
-import Router from './Router';
-import Form1 from './Forms/Form1';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from "react";
+import './handylolo.css';
+import CardText from "./CardText";
+import NavBarItem from "./NavBarItem";
+
+
+/// Here's the code that rotates the background gear ///////
+/// while you are scrolling     /////////////
+window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("bgimage");
+    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+}
+
+/////////// end of background gear rotation ////////////
+
+
+
+
 function App() {
 
-useEffect(()=>{
-  const script = document.createElement("script");
 
-  script.src = "anime.min.js";
-  script.async = true;
+    useEffect(() => {
 
-  document.body.appendChild(script);
-})
+    }, [])
 
-  return (
-    <>
+    return (
+        <div className="App">
+            <div id="bgpng-container">
+                <div id="bgpng"><img id="bgimage" src="./Vector.png"/></div>
+                    
+            </div>
+            <div id="handylolo-container">
+                <div class="navBar">
+                    <img id="loloLogo" src="./techfoollolo.png" />
+                    <NavBarItem props={"My Projects"} />
+                    <NavBarItem props={"Blog"} />
+                    <NavBarItem props={"Social Media"} />
+                    <NavBarItem props={"Contact Me"} />
+                </div>
+                <div class="navBarSpace">
+                </div>
 
-        <BrowserRouter>
+                <CardText header={"Hello. This is HANDYCODER."} content={"I enjoy programming and building things. I also love to share."}/>
+                <CardText header={"Work with me"} content={"If you wanna work with me, I'm always open mind for interesting projects. :)"}/>
+                <CardText header={"Hello. This is HANDYCODER."} content={"I enjoy programming and building things. I also love to share."}/>
+                <CardText header={"Hello. This is HANDYCODER."} content={"I enjoy programming and building things. I also love to share."}/>
 
-        <SystemNavBar />
-        <Router />
-        </BrowserRouter>
-
-    </>
-  );
+             </div>
+        </div>
+    );
 }
 
 export default App;
