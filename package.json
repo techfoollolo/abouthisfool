@@ -2,7 +2,7 @@
   "name": "aboutthisfool",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://techfoollolo.github.io",
+  "homepage":"https://techfoollolo.github.io/abouthisfool/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
