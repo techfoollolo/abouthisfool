@@ -23,7 +23,7 @@
 
 html{
   font-family: var(--HandyLoLoFont);
-    background: var(--bodyBgTheme);
+    /* background: var(--bodyBgTheme); */
     color: var(--mainTheme);
 }
 body{
@@ -141,11 +141,11 @@ body::-webkit-scrollbar {
 }
 .abstract-bg{
   z-index:-1;
-  opacity: 0.4;
-  display: flex;
+  opacity: 0.6;
   height: 400%;
   width: 400%;
   position: fixed;
+  top:0px;
 }
 .navBarItem{
     display: flex;
@@ -167,12 +167,22 @@ body::-webkit-scrollbar {
         font-size: 20px;
         color:var(--mainTheme);
     }
+    .navBarSpace{
+      height: 50px;
+
+    }
     .cardArea{
       /* margin:50px; */
       width:90%;
       height:350px;
       display:flex;
       /* overflow: scroll; */
+    }
+    .cardText{
+      width: 90%;
+    }
+    .HandyCoderBorder{
+      width: 90%;
     }
     .cardArea-space{
       width: 90%;
@@ -182,7 +192,7 @@ body::-webkit-scrollbar {
     #the-lottiefile{
       width:250px;
       height:250px;
-      display: flex;
+      /* display: flex; */
       position: fixed;
       bottom:0px;
       right: 0px;
