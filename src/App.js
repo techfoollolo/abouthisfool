@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import './handylolo.css';
-import CardText from "./CardText";
+
 import NavBarItem from "./NavBarItem";
 import { useLottie } from 'lottie-react';
 import BgAnimation from './student-bg.json';
 import AbstractBgAnime from './lottiefileData/AbstractBg/AbstractBgAnime';
+import TechfoolloloHomePage from "./pages/TechfoolloloHomePage";
 
 
 /// Here's the code that rotates the background gear ///////
@@ -51,11 +52,7 @@ function App() {
                 </div>
                 <canvas class="navBarSpace">
                 </canvas>
-                <div className="techfoollolo-content">
-                <CardText header={"Hello. This is Techfoollolo."} content={"I enjoy studying DevOps. I love to build things, but I love to manage and enhance things even more. I also love to share."}/>
-                <CardText header={"Work with me"} content={"If you wanna work with me, I'm always open mind for interesting projects. :)"}/>
-
-                </div>
+                <TechfoolloloHomePage />
 
              </div>
         </div>
