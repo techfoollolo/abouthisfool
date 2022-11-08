@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import './handylolo.css';
 import CardText from "./CardText";
 import NavBarItem from "./NavBarItem";
+import { useLottie } from 'lottie-react';
+import BgAnimation from './student-bg.json';
 
 
 /// Here's the code that rotates the background gear ///////
@@ -26,12 +28,17 @@ function App() {
     useEffect(() => {
 
     }, [])
-
+    const options = {
+        animationData:BgAnimation,
+        loop:true,
+        play:true
+      }
+      const {View} =useLottie(options);
     return (
         <div className="App">
             <div id="bgpng-container">
                 <div id="bgpng"><img id="bgimage" src="./Vector.png"/></div>
-                    
+                <div id="the-lottiefile">{View}</div>
             </div>
             <div id="handylolo-container">
                 <div class="navBar">
@@ -41,13 +48,13 @@ function App() {
                     <NavBarItem props={"Social Media"} />
                     <NavBarItem props={"Contact Me"} />
                 </div>
-                <div class="navBarSpace">
-                </div>
-
-                <CardText header={"Hello. This is HANDYCODER."} content={"I enjoy programming and building things. I also love to share."}/>
+                <canvas class="navBarSpace">
+                </canvas>
+                <div className="techfoollolo-content">
+                <CardText header={"Hello. This is Techfoollolo."} content={"I enjoy programming and building things. I also love to share."}/>
                 <CardText header={"Work with me"} content={"If you wanna work with me, I'm always open mind for interesting projects. :)"}/>
-                <CardText header={"Hello. This is HANDYCODER."} content={"I enjoy programming and building things. I also love to share."}/>
-                <CardText header={"Hello. This is HANDYCODER."} content={"I enjoy programming and building things. I also love to share."}/>
+
+                </div>
 
              </div>
         </div>
