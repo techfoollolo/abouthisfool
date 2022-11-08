@@ -4,6 +4,7 @@ import CardText from "./CardText";
 import NavBarItem from "./NavBarItem";
 import { useLottie } from 'lottie-react';
 import BgAnimation from './student-bg.json';
+import AbstractBgAnime from './lottiefileData/AbstractBg/AbstractBgAnime';
 
 
 /// Here's the code that rotates the background gear ///////
@@ -39,6 +40,7 @@ function App() {
             <div id="bgpng-container">
                 <div id="bgpng"><img id="bgimage" src="./Vector.png"/></div>
                 <div id="the-lottiefile">{View}</div>
+                <AbstractBgAnime />
             </div>
             <div id="handylolo-container">
                 <div class="navBar">

@@ -139,6 +139,11 @@ body::-webkit-scrollbar {
   right: 0px;
   z-index: -1;
 }
+.abstract-bg{
+  z-index:-3;
+  opacity: 0.4;
+  display: flex;
+}
 .navBarItem{
     display: flex;
     align-items: flex-end;
@@ -180,6 +185,7 @@ body::-webkit-scrollbar {
       right: 0px;
       z-index: -1;
     }
+
     .navBarItem{
       width:70px;
       height: 50px;
