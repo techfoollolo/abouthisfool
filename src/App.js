@@ -43,15 +43,15 @@ function App() {
             <div id="handylolo-container">
                 <div class="navBar">
                     <img id="loloLogo" src="./techfoollolo.png" />
-                    <NavBarItem props={"My Projects"} />
-                    <NavBarItem props={"Blog"} />
+                    <NavBarItem props={"DevOps Blog"} />
+                    <NavBarItem props={"3DWorld"} />
                     <NavBarItem props={"Social Media"} />
                     <NavBarItem props={"Contact Me"} />
                 </div>
                 <canvas class="navBarSpace">
                 </canvas>
                 <div className="techfoollolo-content">
-                <CardText header={"Hello. This is Techfoollolo."} content={"I enjoy programming and building things. I also love to share."}/>
+                <CardText header={"Hello. This is Techfoollolo."} content={"I enjoy studying DevOps. I love to build things, but I love to manage and enhance things even more. I also love to share."}/>
                 <CardText header={"Work with me"} content={"If you wanna work with me, I'm always open mind for interesting projects. :)"}/>
 
                 </div>
