@@ -142,7 +142,6 @@ body::-webkit-scrollbar {
 .navBarItem{
     display: flex;
     align-items: flex-end;
-    /* background: transparent; */
     width: 150px;
     height:95px;
     font-size: 20px;
@@ -154,9 +153,6 @@ body::-webkit-scrollbar {
     background: linear-gradient(-45deg, #ff4363, #783efd, #3091b4, #46ffd4);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    /* background-image: var(--HandyCoderGradient); */
-    /* background-clip: text; */
-    /* color: transparent; */
 }
 @media screen and (max-width: 800px) {
     .navBar{
@@ -165,12 +161,35 @@ body::-webkit-scrollbar {
     }
     .cardArea{
       /* margin:50px; */
-      width:30%;
+      width:90%;
       height:350px;
       display:flex;
-      overflow: scroll;
+      /* overflow: scroll; */
     }
+    .cardArea-space{
+      width: 90%;
+      height: 350px;
+      display: flex;
+    }
+    #the-lottiefile{
+      width:250px;
+      height:250px;
+      display: flex;
+      position: fixed;
+      bottom:0px;
+      right: 0px;
+      z-index: -1;
+    }
+    .navBarItem{
+      width:80px;
+      height: 50px;
+      font-size: 10px;
+      margin-left: 1px;
 
+    }
+    .navBar{
+      height: 50px;
+    }
 }
 
 button{
