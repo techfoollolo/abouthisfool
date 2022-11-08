@@ -38,7 +38,6 @@ function App() {
     return (
         <div className="App">
             <div id="bgpng-container">
-                <div id="bgpng"><img id="bgimage" src="./Vector.png"/></div>
                 <div id="the-lottiefile">{View}</div>
                 <AbstractBgAnime />
             </div>
