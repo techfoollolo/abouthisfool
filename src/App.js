@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import './handylolo.css';
-
+import { BrowserRouter } from "react-router-dom";
 import NavBarItem from "./NavBarItem";
 import { useLottie } from 'lottie-react';
 import BgAnimation from './student-bg.json';
 import AbstractBgAnime from './lottiefileData/AbstractBg/AbstractBgAnime';
 import TechfoolloloHomePage from "./pages/TechfoolloloHomePage";
-
+import Router from './Router.js';
 
 /// Here's the code that rotates the background gear ///////
 /// while you are scrolling     /////////////
@@ -37,6 +37,7 @@ function App() {
       }
       const {View} =useLottie(options);
     return (
+        <BrowserRouter>
         <div className="App">
             <div id="bgpng-container">
                 <div id="the-lottiefile">{View}</div>
@@ -45,17 +46,18 @@ function App() {
             <div id="handylolo-container">
                 <div class="navBar">
                     <img id="loloLogo" src="./techfoollolo.png" />
-                    <NavBarItem props={"DevOps Blog"} />
-                    <NavBarItem props={"3DWorld"} />
-                    <NavBarItem props={"Social Media"} />
-                    <NavBarItem props={"Contact Me"} />
+                    <NavBarItem props={"DevOps Blog"} link={"\/abouthisfool"} />
+                    <NavBarItem props={"3DWorld"} link={"\/3dWorld"}/>
+                    <NavBarItem props={"Social Media"} link={"\/"}/>
+                    <NavBarItem props={"Contact Me"} link={"\/"}/>
                 </div>
                 <canvas class="navBarSpace">
                 </canvas>
-                <TechfoolloloHomePage />
+                <Router />
 
              </div>
         </div>
+        </BrowserRouter>
     );
 }
 

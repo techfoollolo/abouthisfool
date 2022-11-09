@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function navBarItem({props}) {
+function navBarItem({props,link}) {
   return (
-    <button class="navBarItem HandyCoderBorder"><div className='navBarItemText'>{props}</div></button>
+    <button class="navBarItem HandyCoderBorder"><Link className='navBarItemText' to={link}>{props}</Link></button>
   )
 }
 
