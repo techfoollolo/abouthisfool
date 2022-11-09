@@ -5,8 +5,8 @@ export default function CardText({header,content}) {
 
   return (
     <>
-    <div class="cardAreaContainer">
-      <div class="cardArea HandyCoderBorder">
+    <div className="cardAreaContainer">
+      <div className="cardArea HandyCoderBorder">
         <div className='cardText'>
 
           <h1>{header}</h1>

@@ -10,13 +10,23 @@
     --HandyGreen: #00B412;
     --HandyCoderGradient: linear-gradient(90deg, #00E3D6, #BD00FF);
   }
-  /*
-  .gradient-text {
-    background-image: var(--HandyCoderGradient);
-    background-clip: text;
-    color: transparent;
-  }
-  */
+  a:link { text-decoration: none; }
+
+
+  a:visited { text-decoration: none; }
+  
+  
+  a:hover { text-decoration: none; }
+  
+  
+  a:active { text-decoration: none; }
+#threed{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
 #loloLogo{
     height: 125px;
 }
